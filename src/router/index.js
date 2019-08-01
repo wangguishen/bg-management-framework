@@ -14,6 +14,20 @@ const routes = [
     path: '/about',
     name: 'about',
     component: () => import('@/views/About.vue')
+  },
+  {
+    path: '/404',
+    name: 'err404',
+    component: () => import('@/views/err/404.vue')
+  },
+  {
+    path: '/50X',
+    name: 'err50X',
+    component: () => import('@/views/err/50X.vue')
+  },
+  {
+    path: '*',
+    redirect: '/404'
   }
 ]
 

@@ -13,8 +13,11 @@ for (const key in vFilters) {
 }
 
 /* 引入element */
-import '@/components/element-ui'
+// import '@/components/element-ui'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
 import '@/style/style.scss'
+Vue.use(ElementUI)
 
 Vue.config.productionTip = false
 
