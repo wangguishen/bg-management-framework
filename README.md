@@ -1,8 +1,15 @@
 # back-stage-management
 
-## Project setup
+##
+
+## 1.安装依赖包
 ```
 npm install
+```
+
+### 依赖包说明
+```
+
 ```
 
 ### Compiles and hot-reloads for development
