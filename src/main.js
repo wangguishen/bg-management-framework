@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
-import router from './router'
+/* 引入路由 */
+import router from '@/router/index'
+import '@/router/routerSetting'
+
 import store from './store'
 
 Vue.config.productionTip = false
