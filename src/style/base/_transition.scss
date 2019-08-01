@@ -1,0 +1,61 @@
+/* 右侧动画 */
+.slide-right-enter-active {
+  transition: all .3s ease;
+}
+.slide-right-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-right-enter, .slide-right-leave-to {
+  transform: translateX(500px);
+  opacity: 0;
+}
+
+/* 下面就讲解滚动条几个属性，主要有下面7个属性 */
+
+
+/* ::-webkit-scrollbar 滚动条整体部分，可以设置宽度啥的 */
+/* ::-webkit-scrollbar-button 滚动条两端的按钮 */
+/* ::-webkit-scrollbar-track  外层轨道 */
+/* ::-webkit-scrollbar-track-piece  内层滚动槽 */
+/* ::-webkit-scrollbar-thumb 滚动的滑块 */
+/* ::-webkit-scrollbar-corner 边角 */
+/* ::-webkit-resizer 定义右下角拖动块的样式 */
+
+/* 定义了滚动条整体的样式 */
+::-webkit-scrollbar { 
+  width: 7px;
+  height: 7px;
+  background: #FFF;
+}
+::-webkit-scrollbar-track-piece {
+  background: #FFF;
+}
+/* 滚动槽 */
+::-webkit-scrollbar-track{ 
+  /* -webkit-box-shadow: inset 0 0 2px yellow; */
+  border-radius: 5px;
+}
+/* 滚动条滑块 滑块部分；*/
+::-webkit-scrollbar-thumb {
+  background: rgba(144, 147, 153, 0.3);
+  border-radius:4px;
+  /* -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.5); */
+}
+::-webkit-scrollbar-thumb:hover { 
+  background: rgba(144, 147, 153, 0.3);
+}
+
+.ps__rail-y{
+  width: 8px !important;
+}
+.ps__rail-y:hover > .ps__thumb-y, .ps__rail-y:focus > .ps__thumb-y, .ps__rail-y.ps--clicking .ps__thumb-y{
+  width: 6px !important;
+  right: 1px;
+}
+.ps .ps__rail-x:hover, .ps .ps__rail-y:hover, .ps .ps__rail-x:focus, .ps .ps__rail-y:focus, .ps .ps__rail-x.ps--clicking, .ps .ps__rail-y.ps--clicking{
+  background-color: rgba(144, 147, 153, 0.1);
+}
+.ps__thumb-y{
+  background-color: rgba(144, 147, 153, 0.1);
+  right: 1px !important;
+}

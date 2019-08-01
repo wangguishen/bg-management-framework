@@ -1,0 +1,13 @@
+/* 改变主题色变量 */
+// $--color-primary: $color-primary;
+$--color-primary: #f2f2f2;
+/* 改变button颜色值 */
+// $--color-success: $btngreen !default;
+// $--color-warning: $btnorange !default;
+// $--color-info: $btngray !default;
+// $--color-danger: $btnbrightred !default;
+
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@import "~element-ui/packages/theme-chalk/src/index";

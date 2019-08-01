@@ -12,6 +12,10 @@ for (const key in vFilters) {
   Vue.filter(key, vFilters[key])
 }
 
+/* 引入element */
+import '@/components/element-ui'
+import '@/style/style.scss'
+
 Vue.config.productionTip = false
 
 new Vue({
