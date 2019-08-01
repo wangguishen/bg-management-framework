@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    {{ ceshi }}
     <HelloWorld msg="Welcome to Your Vue.js App" />
   </div>
 </template>
@@ -12,6 +13,11 @@ export default {
   name: 'home',
   components: {
     HelloWorld
+  },
+  computed: {
+    ceshi () {
+      return this.$store.getters.getCeshi
+    }
   }
 }
 </script>
